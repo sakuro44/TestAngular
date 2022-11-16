@@ -1,0 +1,115 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logo {
+    width: 80;
+    height: 80;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text{
+    h3{
+        color:rgb(253, 161, 233);
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+.text1{
+    h3{
+        color:rgb(253, 161, 233);
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+    }
+    .text2{
+        h4{
+            color:rgb(253, 161, 233);
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+        }
+        p{
+            color:rgb(253, 161, 233);
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.content {
+    position: relative;
+    justify-content: space-between;
+    color: rgb(253, 161, 233);
+    display: flex;
+    align-items: center;
+    margin: 200px 150px;
+
+    h3 {
+        font-size: 20px;
+        color: rgb(236, 197, 222);
+        margin-bottom: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 70px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color: rgb(238, 191, 226);
+        margin-top: 4px;
+    }
+
+    .pic {
+        width: 300px;
+    }
+
+    .pic2 {
+        position: absolute;
+        top: 280px;
+        left: 690px;
+        width: 200px;
+       
+    }
+    .pic3 {
+        position:absolute;
+        top: 76px;
+        left: 150px;
+        width: 130px;
+    }
+    .pic4 {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        width: 150px;
+    }
+    .pic5 {
+        position: absolute;
+        top: -50px;
+        right: 300px;
+        width: 150px;
+    }
+}
+.pic8{
+    position:relative; 
+    left: 46.8%;  
+    .pic7{
+        width: 50px;
+    }
+    .pic6{
+        width: 50px; 
+    }
+
+}
