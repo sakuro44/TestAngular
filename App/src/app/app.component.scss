@@ -113,3 +113,32 @@
     }
 
 }
+form{
+    margin-top: 15px;
+    text-align: center;
+    label{
+        color:rgb(253, 161, 233);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+    }
+    input{
+        color: white;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: solid 1px white;
+        
+    }
+    .show-error{
+        color: red;
+    }
+    button{
+        color: white;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: solid 1px white;
+       
+    }
+}
+.dio:hover{
+    background-color: rgb(255, 255, 255);
+}

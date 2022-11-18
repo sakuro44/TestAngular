@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  formGrp: FormGroup;
+
+  constructor(formBuilder: FormBuilder) {
+    this.formGrp = formBuilder.group({
+      emailctrl: ['', [Validators.required, Validators.email]]
+    })
+  }
+
+  get emailid(){
+    return this.formGrp.controls;
+  }
+
+  doSubmit() {
+    console.log(this.formGrp.value);
+  }
   name = 'SAKURA';
   myimaage1:string = '/assets/pic/icons8-blossom-64.png';
   myimaage2:string = '/assets/pic/me.jpg';

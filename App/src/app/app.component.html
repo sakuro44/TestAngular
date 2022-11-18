@@ -118,6 +118,23 @@
        <a href="https://www.facebook.com/kanok.eueikikihahalol"><img class="pic6" [src]="myimaage7"></a> 
        <a href="https://github.com/sakuro44"><img class="pic7" [src]="myimaage8"></a> 
     </div>
+    <div>
+        <form [formGroup]="formGrp" novalidate>
+            <div>
+              <label>Contact Email ID</label><br>
+              <input type="email" formControlName="emailctrl" placeholder="Please enter email id here">
+          
+              <div *ngIf="emailid['emailctrl'].touched && emailid['emailctrl'].invalid" class="show-error">
+                <div *ngIf="emailid['emailctrl'].errors?.['required'] && emailid['emailctrl'].dirty">Please enter email id</div>
+                <div *ngIf="emailid['emailctrl'].errors?.['email'] && emailid['emailctrl'].dirty">Please enter valid email id</div>
+              </div>
+            </div>
+            <div class="sub">
+                <button class="dio" type="submit" [disabled]="!formGrp.valid" (click)="doSubmit()" style="color:rgb(180, 111, 193);">Send</button>
+              </div>
+          </form>
+       
+    </div>
    
    
    
